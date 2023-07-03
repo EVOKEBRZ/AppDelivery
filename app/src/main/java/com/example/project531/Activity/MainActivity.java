@@ -56,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodlist = new ArrayList<>();
-        foodlist.add(new FoodDomain("PIZZA DE PEPERONI", "pizza1", "pepperoni, queijo mussarela, oregano, pimenta do reino, tempeiro verde", 13.0, 5, 20, 1000));
-        foodlist.add(new FoodDomain("X-EGG", "burger", "bife, Queijo, Salada Special, tomate ", 15.20, 4, 18, 1500));
-        foodlist.add(new FoodDomain("PIZZA VEGANA", "pizza3", " azeite, Kalamata,  tomate, oregano,", 11.0, 3, 16, 800));
-        foodlist.add(new FoodDomain("Whopper Choripan", "whopperchoripan", " Pão com Gergelim, Hamburger tipo Linguiça,  Alface, tomate,", 5.0, 5, 5, 200));
-        foodlist.add(new FoodDomain("Spider Burger", "spiderburger", " Pão com Gergelim, Hamburger tipo Linguiça,  Alface, tomate,", 5.0, 5, 5, 200));
+        foodlist.add(new FoodDomain("PeppeRock", "pepperock", "Queijo, pepperoni, azeitona preta, parmesão ralado, Philadelphia ® e alho granulado.", 37.90, 5, 20, 1000));
+        foodlist.add(new FoodDomain("Shake Chocolate Farofa", "shake", "Sorvete, farofa doce, cobertura chocolate especial ", 8.90, 4, 6, 400));
+        foodlist.add(new FoodDomain("3 Queijos", "queijos", " Queijo, requeijão e parmesão ralado", 34.90, 3, 16, 800));
+        foodlist.add(new FoodDomain("Whopper Choripan", "whopperchoripan", " Pão com Gergelim, Hamburger tipo Linguiça,  Alface, tomate,", 12.90, 5, 5, 200));
+        foodlist.add(new FoodDomain("Spider Burger", "spiderburger", " Pão Brioche Vermelho, 2 blends 100gr,  Cheddar fatia, molho,", 9.90, 5, 9, 200));
 
         adapter2 = new RecommendedAdapter(foodlist);
         recyclerViewPopularList.setAdapter(adapter2);
